@@ -1,0 +1,29 @@
+:root {
+  /* font-family: 'Major Mono Display', monospace; */
+  /* font-family: 'Share Tech Mono', monospace; */
+  font-family: 'VT323', monospace;
+  font-weight: 400;
+
+  color: black;
+  background-color: white;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(assets/morpheus.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+

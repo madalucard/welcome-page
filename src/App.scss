@@ -1,0 +1,375 @@
+:root{
+  --dark-green: #008f11;
+  --neon-green: #00FF41;
+  --dark-aura: rgba(0, 143, 17, 0.3);
+  --neon-aura: rgba(0, 255, 64, 0.6);
+
+}
+.container{
+  color: var(--neon-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.hands{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  flex: 1 1 auto;
+  
+  width: 100vw;  
+  
+  .left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    width: 20px;
+    width: 100vw;
+
+    .name{
+      text-align: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.5s ease-out;
+    }      
+  }
+
+  .left:hover{
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+  .right:hover{
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }  
+
+  a{
+    text-decoration: none;
+  }
+  a:hover{ 
+    text-decoration: none;
+
+  }
+  .left:hover .name{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+    color: rgb(255, 0, 0),
+  }
+
+  .right:hover .name{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+    color: rgb(4, 0, 255),
+  }
+}
+
+.header{
+  h1{
+    line-height: normal;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  .hands{
+    .left{
+      border-radius: 35%;
+      margin: 200px 40px 100px 100px;
+    }
+    .right{
+      border-radius: 35%;
+      margin: 200px 100px 100px 40px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2{
+    font-size: 36px;
+  }
+  .hands{
+    .left{
+      border-radius: 35%;
+      margin: 200px 50px 100px 120px;
+    }
+    .right{
+      border-radius: 35%;
+      margin: 200px 120px 100px 50px;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2{
+    font-size: 50px;
+  }
+  .hands{
+    .left{
+      border-radius: 40%;
+      margin: 250px 50px 150px 220px;
+    }
+    .right{
+      border-radius: 40%;
+      margin: 250px 220px 150px 50px;
+    }
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 80px;
+  }
+  h2{
+    font-size: 60px;
+  }
+  .hands{
+    .left{
+      border-radius: 40%;
+      margin: 150px 50px 150px 250px;
+    }
+    .right{
+      border-radius: 40%;
+      margin: 150px 250px 150px 50px;
+    }
+  }
+}
+@media only screen and (min-width: 1500px) {
+  h1 {
+    font-size: 100px;
+  }
+  h2{
+    font-size: 70px;
+  }
+  .hands{
+    .left{
+      border-radius: 40%;
+      margin: 150px 70px 150px 350px;
+    }
+    .right{
+      border-radius: 40%;
+      margin: 150px 350px 150px 70px;
+    }    
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  h1 {
+    font-size: 100px;
+  }
+  h2{
+    font-size: 70px;
+  }
+  .hands{
+    .left{
+      border-radius: 40%;
+      margin: 200px 100px 150px 500px;
+    }
+    .right{
+      border-radius: 40%;
+      margin: 200px 500px 150px 100px;
+    }    
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  h1 {
+    font-size: 100px;
+  }
+  h2{
+    font-size: 70px;
+  }
+  .hands{
+    .left{
+      border-radius: 40%;
+      margin: 300px 100px 180px 600px;
+    }
+    .right{
+      border-radius: 40%;
+      margin: 300px 600px 180px 100px;
+    }    
+  }
+}
+@media only screen and (min-width: 3000px) {
+  h1 {
+    font-size: 100px;
+  }
+  h2{
+    font-size: 70px;
+  }
+  .hands{
+    .left{
+      border-radius: 40%;
+      margin: 400px 100px 180px 1000px;
+    }
+    .right{
+      border-radius: 40%;
+      margin: 400px 1000px 180px 100px;
+    }    
+  }
+}
+
+//glow effect
+a.left:hover, .glowRed:hover{
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glowRed 1s ease-in-out infinite alternate;
+}
+a.right:hover, .glowBlue:hover{
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glowBlue 1s ease-in-out infinite alternate;
+}
+
+// glow red
+@-webkit-keyframes glowRed {
+  from {
+    text-shadow: 
+      0 0 10px rgb(255, 255, 255),
+      0 0 20px rgb(255, 255, 255),
+      0 0 30px rgba(255, 0, 0, 0.8),
+      0 0 40px rgba(255, 0, 0, 0.8),
+      0 0 50px rgba(255, 0, 0, 0.8),
+      0 0 60px rgba(255, 0, 0, 0.8),
+      0 0 70px rgba(255, 0, 0, 0.8),;
+  }
+  to {
+    text-shadow: 
+      0 0 20px rgb(255, 255, 255),
+      0 0 30px rgb(252, 252, 252),
+      0 0 40px rgba(255, 0, 0, 0.3),
+      0 0 50px rgba(255, 0, 0, 0.3),
+      0 0 60px rgba(255, 0, 0, 0.3),
+      0 0 70px rgba(255, 0, 0, 0.3),
+      0 0 80px rgba(255, 0, 0, 0.3);
+  }
+}
+// glow blue
+@-webkit-keyframes glowBlue {
+  from {
+    text-shadow: 
+      0 0 10px rgb(255, 255, 255),
+      0 0 20px rgb(255, 255, 255),
+      0 0 30px rgba(0, 0, 255, 0.6),
+      0 0 40px rgba(0, 0, 255, 0.6),
+      0 0 50px rgba(0, 0, 255, 0.6),
+      0 0 60px rgba(0, 0, 255, 0.6),
+      0 0 70px rgba(0, 0, 255, 0.6);
+  }
+  to {
+    text-shadow: 
+      0 0 20px rgb(255, 255, 255),
+      0 0 30px rgb(252, 252, 252),
+      0 0 40px rgba(0, 0, 255, 0.3),
+      0 0 50px rgba(0, 0, 255, 0.3),
+      0 0 60px rgba(0, 0, 255, 0.3),
+      0 0 70px rgba(0, 0, 255, 0.3),
+      0 0 80px rgba(0, 0, 255, 0.3),;
+  }
+}
+
+// flicker effect
+.flicker{ 
+  display: flex;
+  text-shadow: 1px 0px 4px var(--dark-aura), 2px 0px 4px var(--dark-aura), 3px 0px 4px var(--neon-aura), 2px 0px 3px var(--neon-aura), 2px 3px 15px var(--neon-green), 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px var(--neon-green),40px 0vw 200px var(--neon-green);
+}
+
+.flicker-slow{
+  animation: flicker 4s linear infinite;
+}
+
+.flicker-medium{
+  animation: flicker 2.5s linear infinite;
+}
+
+.flicker-fast{
+  animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		//text-shadow: none;
+    opacity: .99;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
