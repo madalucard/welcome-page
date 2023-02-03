@@ -5,12 +5,26 @@ function App() {
     <div className="container">
       <div className="header">
         <h1 className="flicker">
-          W<span className="flicker-fast">h</span>at&nbsp;will yo
-          <span className="flicker-medium">u&nbsp;</span>cho
-          <span className="flicker-fast">os</span>e Mr.&nbsp;
-          <span className="flicker-medium">A</span>nderso
-          <span className="flicker-slow">n</span> ..
-          <span className="flicker-fast">.</span>
+          <div>
+            W<span className="flicker-fast">h</span>at
+          </div>
+          <div>
+            &nbsp;will yo
+            <span className="flicker-medium">u&nbsp;</span>
+          </div>
+          <div>
+            cho
+            <span className="flicker-fast">os</span>e&nbsp;
+          </div>
+          <div>Mr.&nbsp;</div>
+          <div>
+            <span className="flicker-medium">A</span>nderso
+            <span className="flicker-slow">n</span>
+          </div>
+          <div>
+            ..
+            <span className="flicker-fast">.</span>
+          </div>
         </h1>
       </div>
       <div className="hands">

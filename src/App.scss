@@ -9,10 +9,14 @@
   color: var(--neon-green);
   display: flex;
   flex-direction: column;
+  // flex-wrap: wrap;
   align-items: center;
+  // justify-content: center;
   width: 100%;
   height: 100vh;
-  
+  .header-wrapper{
+    display: flex;
+  }
 }
 
 .hands{
@@ -293,6 +297,8 @@ a.right:hover, .glowBlue:hover{
 // flicker effect
 .flicker{ 
   display: flex;
+  flex-wrap:wrap; 
+  justify-content: center;
   text-shadow: 1px 0px 4px var(--dark-aura), 2px 0px 4px var(--dark-aura), 3px 0px 4px var(--neon-aura), 2px 0px 3px var(--neon-aura), 2px 3px 15px var(--neon-green), 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px var(--neon-green),40px 0vw 200px var(--neon-green);
 }
 
